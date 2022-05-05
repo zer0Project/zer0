@@ -1,6 +1,7 @@
 # Imports
 import os
 from time import sleep
+from getpass import getpass
 
 # Vars
 users = {
@@ -21,26 +22,15 @@ class Colors:
 # Funcs
 os.system('clear')
 
-def login_banner():
+def baish_banner():
+    print(Colors.CYAN)
     print("""
-             """+Colors.RED+""",----------------,              ,---------,
-        """+Colors.GREEN+""",-----------------------,          ,"        ,"|
-      """+Colors.YELLOW+""","                      ,"|        ,"        ,"  |
-     """+Colors.BLUE+"""+-----------------------+  |      ,"        ,"    |
-     """+Colors.MAGENTA+"""|  .-----------------.  |  |     +---------+      |
-     """+Colors.CYAN+"""|  |                 |  |  |     | -==----'|      |
-     """+Colors.WHITE+"""|  |  C:\>Enter user |  |  |     |         |      |
-     """+Colors.RED+"""|  |  C:\>Enter pass |  |  |/----|`---=    |      |
-     """+Colors.GREEN+"""|  |  C:\>Loading... |  |  |   ,/|==== ooo |      ;
-     """+Colors.YELLOW+"""|  |                 |  |  |  // |(((( [33]|    ,"
-     """+Colors.BLUE+"""|  `-----------------'  |," .;'| |((((     |  ,"
-     """+Colors.MAGENTA+"""+-----------------------+  ;;  | |         |,"     -zer0 Cheats-
-        """+Colors.CYAN+"""/_)______________(_/  //'   | +---------+
-   """+Colors.WHITE+"""___________________________/___  `,
-  """+Colors.RED+"""/  oooooooooooooooo  .o.  oooo /,   \,"-----------
- """+Colors.GREEN+"""/ ==ooooooooooooooo==.o.  ooo= //   ,`\--{)B     ,"
-"""+Colors.YELLOW+"""/_==__==========__==_ooo__ooo=_/'   /___________,"
-"""+Colors.BLUE+"""`-----------------------------'
+                            -------------
+                             Baish baish
+    _._     _,-'""`-._      -------------
+    (,-.`._,'(       |\`-/|  /
+        `-.-' \ )-`( , o o) /
+              `-    \`_`"'-
     """)
     print(Colors.RESET)
 
@@ -49,7 +39,7 @@ print(" ["+Colors.RED+"zer0"+Colors.RESET+"] ["+Colors.GREEN+"+"+Colors.RESET+"]
 sleep(1)
 os.system("clear")
 
-login_banner()
+baish_banner()
 
 Login = input(Colors.RED + ' Login: ' + Colors.RESET) 
 Passwdd = getpass(Colors.RED + ' Password: '+ Colors.RESET)
